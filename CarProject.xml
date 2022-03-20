@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarProject</name>
+    </assembly>
+    <members>
+        <member name="T:CarProject.Business.CarHouseBusiness">
+            <summary>
+            Създава се бизнес слой, който работи с БД.
+            </summary>
+            <remarks>
+            <c>CarHouseBusiness</c> дава възможност за добавяне, изтриване, актуализиране и извличане на информация, 
+            която се запазва в БД
+            </remarks>
+        </member>
+        <member name="F:CarProject.Business.CarHouseBusiness.carhouseContext">
+            <value>
+            <c>carhouseContext</c> е нов обект за използване на връзката с БД от клас <c>CarHouseContext</c> 
+            </value>
+            <remarks>
+            В текущия клас вече може да се работи с данните от клас <c>CarHouseContext</c>.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.AddModel(CarProject.Data.Model.Modell)">
+             <summary>
+            Метод за добавяне на модел към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Modelss</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.AddBrand(CarProject.Data.Model.Brand)">
+             <summary>
+            Метод за добавяне на марка към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.AddCar(CarProject.Data.Model.Car)">
+             <summary>
+            Метод за добавяне на кола към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.AddClient(CarProject.Data.Model.Client)">
+             <summary>
+            Метод за добавяне на клиент към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.AddOrder(CarProject.Data.Model.Order)">
+             <summary>
+            Метод за добавяне на поръчка към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.UpdateModel(CarProject.Data.Model.Modell)">
+             <summary>
+            Метод за aктуализиранe на модел от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.UpdateBrand(CarProject.Data.Model.Brand)">
+             <summary>
+            Метод за aктуализиранe на марка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.UpdateCar(CarProject.Data.Model.Car)">
+             <summary>
+            Метод за aктуализиранe на кола от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.UpdateClient(CarProject.Data.Model.Client)">
+             <summary>
+            Метод за aктуализиранe на клиент от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.UpdateOrder(CarProject.Data.Model.Order)">
+             <summary>
+            Метод за aктуализиранe на поръчка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.DeleteModel(System.Int32)">
+             <summary>
+            Метод за изтриване на модел от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.DeleteBrand(System.Int32)">
+             <summary>
+            Метод за изтриване на марка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.DeleteCar(System.Int32)">
+             <summary>
+            Метод за изтриване на кола от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.DeleteClient(System.Int32)">
+             <summary>
+            Метод за изтриване на клиент от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.DeleteOrder(System.Int32)">
+             <summary>
+            Метод за изтриване на поръчка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetModel(System.Int32)">
+            <summary>
+            Метод за вземане на модел от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetBrand(System.Int32)">
+            <summary>
+            Метод за вземане на марка от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetCar(System.Int32)">
+            <summary>
+            Метод за вземане на кола от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            Направените промени се запазват.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetClient(System.Int32)">
+            <summary>
+            Метод за вземане на клиент от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetOrder(System.Int32)">
+            <summary>
+            Метод за вземане на поръчка от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            Направените промени се запазват.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetAllModels">
+            <summary>
+            Списък за вземaне на всички модели от базата данни
+            </summary>
+            <remarks>
+            Връща крайния списък с моделите след направените промени.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetAllBrands">
+            <summary>
+            Списък за вземaне на всички марки от базата данни
+            </summary>
+            <remarks>
+            Връща крайния списък с марките след направените промени.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetAllCars">
+            <summary>
+            Списък за вземaне на всички коли от базата данни
+            </summary>
+            <remarks>
+            Връща крайния списък с колите след направените промени.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetAllClients">
+            <summary>
+            Списък за вземaне на всички клиенти от базата данни
+            </summary>
+            <remarks>
+            Връща крайния списък с клиентите след направените промени.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Business.CarHouseBusiness.GetAllOrders">
+            <summary>
+            Списък за вземaне на всички поръчки от базата данни
+            </summary>
+            <remarks>
+            Връща крайния списък с поръчките след направените промени.
+            </remarks>
+        </member>
+        <member name="T:CarProject.Data.Model.Brand">
+            <summary>
+            Ентити, което съхранява информация за марките на колите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>brandId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на марката.
+            </description>
+            </item>
+            <item>
+            <term>BrandName</term>
+            <description>
+            Съхранява името на марката.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:CarProject.Data.Model.Car">
+            <summary>
+            Ентити, което съхранява информация за клиентите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>CarId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на колата.
+            </description>
+            </item>
+            <item>
+            <term>Brand</term>
+            <description>
+            Връзка с таблица <c>Brand</c>.
+            </description>
+            </item>
+            <item>
+            <term>Modell</term>
+            <description>
+            Връзка с таблица <c>Modell</c>.
+            </description>
+            </item>
+            <item>
+            <term>Price</term>
+            <description>
+            Съхранява единичната цена на колата.
+            </description>
+            </item>
+            <item>
+            <term>Fuel</term>
+            <description>
+            Съхранява информация за горивото, което използва на колата.
+            </description>
+            </item>
+            <item>
+            <term>Colour</term>
+            <description>
+            Съхранява информациа за цвета на колата.
+            </description>
+            </item>
+            <item>
+            <term>Order</term>
+            <description>
+            Връзка с таблица <c>Order</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:CarProject.Data.Model.Client">
+            <summary>
+            Ентити, което съхранява информация за клиентите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>ClientId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на клиента.
+            </description>
+            </item>
+            <item>
+            <term>ClientName</term>
+            <description>
+            Съхранява името на клиента.
+            </description>
+            </item>
+            <item>
+            <term>Phone</term>
+            <description>
+            Съхранява телефонния номер на клиента.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:CarProject.Data.Model.Modell">
+            <summary>
+            Ентити, което съхранява информация за моделите на колите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>ModellId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на модела.
+            </description>
+            </item>
+            <item>
+            <term>ModellName</term>
+            <description>
+            Съхранява името на модела.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:CarProject.Data.Model.Order">
+            <summary>
+            Ентити, което съхранява информация за поръчките.
+            </summary>
+            <list type="table">
+            <item>
+            <term>OrderId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на поръчката.
+            </description>
+            </item>
+            <item>
+            <term>Clients</term>
+            <description>
+            Връзка с таблица <c>Client</c>.
+            </description>
+            </item>
+            <item>
+            <term>Cars</term>
+            <description>
+            Връзка с таблица <c>Car</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:CarProject.Presentation.Display">
+            <summary>
+            Описване на потребителския интерфейс.
+            </summary>
+            <remarks>
+            <c>Display</c> представя възможност за използване 
+            на различни методи за работа с база данни като 
+            добавяне, изтриване, актуализиране, извличане.
+            </remarks>
+        </member>
+        <member name="F:CarProject.Presentation.Display.closeOperationId">
+            <value>
+            <c>closeOpearatioId</c> приема стойността, която ще се използва за
+            прекратяването на програмата.
+            </value>
+        </member>
+        <member name="F:CarProject.Presentation.Display.carhouseBusiness">
+            <value>
+            <c>carhouseBusiness</c> свързва <c>Display</c> с <c>CarHouseBusiness</c>.
+            </value>
+            <remarks>
+            В текущия клас вече може да се работи с данните от клас <c>CarHouseBusiness</c>.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Presentation.Display.#ctor">
+            <summary>
+            Насърчава програмата да използва метода за въвеждане 
+            на информация от потребителя.
+            </summary>
+        </member>
+        <member name="M:CarProject.Presentation.Display.ShowMenu">
+            <summary>
+            Mетод за визуално представяне на менюто върху потребителския интерфейс.
+            </summary>
+            <remarks>
+            На интерфейса се извеждат всички възможни опции за въвеждане.
+            </remarks>
+        </member>
+        <member name="M:CarProject.Presentation.Display.Input">
+            <summary>
+            Дава се възможност на потребителя да избере да работи 
+            с един от предложените методи, докато не прекрати програмата.
+            </summary>
+            <remarks>
+            <list type="table">
+            <item>
+            <term>operation, do/while</term>
+            <description>
+            Потребителят въвежда стойност за <c>operation</c>, с която ще направи своя
+            избор на метод за използване за работа с базата данни. Командата do/while
+            ще се повтаря, докато потребителят не въведе 6, с което ще прекрати програмата.
+            </description>
+            </item>
+            <item>
+            <term>ShowMenu</term>
+            <description>
+            Използване на метода <c>ShowMenu</c>.
+            </description>
+            </item>
+            <item>switch/case</item>
+            <description>
+            При въвеждане на 1 - се преминава към работа с метода <c>Add</c>,
+            при въвеждане на 2 - се преминава към работа с метода <c>Update</c>,
+            при въвеждане на 3 - се преминава към работа с метода <c>Delete</c>,
+            при въвеждане на 4 - се преминава към работа с метода <c>Fetch</c>,
+            при въвеждане на 5 - се преминава към работа с метода <c>ListAll</c>,
+            при въвеждане на 6 - се прекратява програмата.
+            </description>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:CarProject.Presentation.Display.Add">
+            <summary>
+            Добавя нов запис в базата данни.
+            </summary>
+            <remarks>
+            Новия запис се добавя в избраната чрез въвеждане върху потребителския интерфейс таблица.
+            </remarks>
+            <list type="table">
+            <term>model</term>
+            <description>
+            Създава се нов запис в таблица <c>Modell</c> като се въведе името на модела.
+            </description>
+            <term>brand</term>
+            <description>
+            Създава се нов запис в таблица <c>Brand</c> като се въведе името на марката.
+            </description>
+            <term>car</term>
+            <description>
+            Създава се нов запис в таблица <c>Car</c> като се въведат изискваните данни за колата.
+            </description>
+            <term>client</term>
+            <description>
+            Създава се нов запис в таблица <c>Client</c> като се въведат изискваните данни за клиента.
+            </description>
+            <term>order</term>
+            <description>
+            Създава се нов запис в таблица <c>Order</c> като се въведат изискваните данни за поръчката.
+            </description>
+            </list>
+        </member>
+        <member name="M:CarProject.Presentation.Display.Update">
+            <summary>
+            Актуализира се запис в базата данни.
+            </summary>
+            <remarks>
+            Актуализира се запис в избраната чрез въвеждане върху потребителския интерфейс таблица.
+            </remarks>
+            <list type="table">
+            <term>model</term>
+            <description>
+            Актуализира запис в таблица <c>Modell</c> като се въведе 
+            идентификационния номер на модела и следователно данните, с които да го актуализираме.
+            </description>
+            <term>brand</term>
+            <description>
+            Актуализира запис в таблица <c>Brand</c> като се въведе 
+            идентификационния номер на марката и следователно данните, с които да я актуализираме.
+            </description>
+            <term>car</term>
+            <description>
+            Актуализира запис в таблица <c>Car</c> като се въведе 
+            идентификационния номер на колата и следователно данните, с които да я актуализираме.
+            </description>
+            <term>client</term>
+            <description>
+            Актуализира запис в таблица <c>Client</c> като се въведе 
+            идентификационния номер на клиента и следователно данните, с които да го актуализираме.
+            </description>
+            <term>order</term>
+            <description>
+            Актуализира запис в таблица <c>Order</c> като се въведе 
+            идентификационния номер на поръчката и следователно данните, с които да я актуализираме.
+            </description>
+            </list>
+        </member>
+        <member name="M:CarProject.Presentation.Display.Delete">
+            <summary>
+            Изтрива се запис от базата данни по ID.
+            </summary>
+            <remarks>
+            Изтрива се запис от избраната чрез въвеждане върху потребителския интерфейс таблица.
+            </remarks>
+            <list type="table">
+            <term>model</term>
+            <description>
+            Изтрива запис от таблица <c>Modell</c> като се въведе 
+            идентификационния номер на модела.
+            </description>
+            <term>brand</term>
+            <description>
+            Изтрива запис от таблица <c>Brand</c> като се въведе 
+            идентификационния номер на марката.
+            </description>
+            <term>car</term>
+            <description>
+            Изтрива запис от таблица <c>Car</c> като се въведе 
+            идентификационния номер на колата.
+            </description>
+            <term>client</term>
+            <description>
+            Изтрива запис от таблица <c>Client</c> като се въведе 
+            идентификационния номер на клиента.
+            </description>
+            <term>order</term>
+            <description>
+            Изтрива запис от таблица <c>Order</c> като се въведе 
+            идентификационния номер на поръката.
+            </description>
+            </list>
+        </member>
+        <member name="M:CarProject.Presentation.Display.Fetch">
+            <summary>
+            Извежда се запис от базата данни по ID.
+            </summary>
+            <remarks>
+            Извежда се запис от избраната чрез въвеждане върху потребителския интерфейс таблица.
+            </remarks>
+            <list type="table">
+            <term>model</term>
+            <description>
+            Извежда запис от таблица <c>Modell</c> като се въведе 
+            идентификационния номер на модела.
+            </description>
+            <term>brand</term>
+            <description>
+            Извежда запис от таблица <c>Brand</c> като се въведе 
+            идентификационния номер на марката.
+            </description>
+            <term>car</term>
+            <description>
+            Извежда запис от таблица <c>Car</c> като се въведе 
+            идентификационния номер на колата.
+            </description>
+            <term>client</term>
+            <description>
+            Извежда запис от таблица <c>Client</c> като се въведе 
+            идентификационния номер на клиента.
+            </description>
+            <term>order</term>
+            <description>
+            Извежда запис от таблица <c>Order</c> като се въведе 
+            идентификационния номер на поръката.
+            </description>
+            </list>
+        </member>
+        <member name="M:CarProject.Presentation.Display.ListAll">
+            <summary>
+            Извеждат се всички записи от дадена таблица в базата данни.
+            </summary>
+            <list type="table">
+            <term>model</term>
+            <description>
+            Извеждат се всички записи от таблица <c>Modell</c>.
+            </description>
+            <term>brand</term>
+            <description>
+            Извеждат се всички записи от таблица <c>Brand</c>.
+            </description>
+            <term>car</term>
+            <description>
+            Извеждат се всички записи от таблица <c>Car</c>.
+            </description>
+            <term>client</term>
+            <description>
+            Извеждат се всички записи от таблица <c>Client</c>.
+            </description>
+            <term>order</term>
+            <description>
+            Извеждат се всички записи от таблица <c>Order</c>.
+            </description>
+            </list>
+        </member>
+    </members>
+</doc>
