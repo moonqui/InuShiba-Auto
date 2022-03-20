@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Data</name>
+    </assembly>
+    <members>
+        <member name="T:Data.Model.Brand">
+            <summary>
+            Ентити, което съхранява информация за марките на колите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>BrandId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на марката.
+            </description>
+            </item>
+            <item>
+            <term>BrandName</term>
+            <description>
+            Съхранява името на марката.
+            </description>
+            </item>
+            <item>
+            <term>Cars</term>
+            <description>
+            Връзка с таблица <c>Car</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:Data.Model.Car">
+            <summary>
+            Ентити, което съхранява информация за клиентите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>CarId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на колата.
+            </description>
+            </item>
+            <item>
+            <term>BrandId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на марката на колата.
+            </description>
+            </item>
+            <item>
+            <term>ModellId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на модела на колата.
+            </description>
+            </item>
+            <item>
+            <term>Brands</term>
+            <description>
+            Връзка с таблица <c>Brand</c>.
+            </description>
+            </item>
+            <item>
+            <term>Modells</term>
+            <description>
+            Връзка с таблица <c>Modell</c>.
+            </description>
+            </item>
+            <item>
+            <term>Price</term>
+            <description>
+            Съхранява единичната цена на колата.
+            </description>
+            </item>
+            <item>
+            <term>Fuel</term>
+            <description>
+            Съхранява информация за горивото, което използва на колата.
+            </description>
+            </item>
+            <item>
+            <term>Colour</term>
+            <description>
+            Съхранява информациа за цвета на колата.
+            </description>
+            </item>
+            <item>
+            <term>Order</term>
+            <description>
+            Връзка с таблица <c>Order</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:Data.Model.Client">
+            <summary>
+            Ентити, което съхранява информация за клиентите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>ClientId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на клиента.
+            </description>
+            </item>
+            <item>
+            <term>ClientName</term>
+            <description>
+            Съхранява името на клиента.
+            </description>
+            </item>
+            <item>
+            <term>Phone</term>
+            <description>
+            Съхранява телефонния номер на клиента.
+            </description>
+            </item>
+            <item>
+            <term>Orders</term>
+            <description>
+            Връзка с таблица <c>Order</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:Data.Model.Modell">
+            <summary>
+            Ентити, което съхранява информация за моделите на колите.
+            </summary>
+            <list type="table">
+            <item>
+            <term>ModellId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на модела.
+            </description>
+            </item>
+            <item>
+            <term>ModellName</term>
+            <description>
+            Съхранява името на модела.
+            </description>
+            </item>
+            <item>
+            <term>Cars</term>
+            <description>
+            Връзка с таблица <c>Car</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+        <member name="T:Data.Model.Order">
+            <summary>
+            Ентити, което съхранява информация за поръчките.
+            </summary>
+            <list type="table">
+            <item>
+            <term>OrderId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на поръчката.
+            </description>
+            </item>
+            <item>
+            <term>ClientId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на клиента на поръчката.
+            </description>
+            </item>
+            <item>
+            <term>CarId</term>
+            <description>
+            Съхранява уникалния идентификационен номер на колата на поръчката.
+            </description>
+            </item>
+            <item>
+            <term>Client</term>
+            <description>
+            Връзка с таблица <c>Client</c>.
+            </description>
+            </item>
+            <item>
+            <term>Cars</term>
+            <description>
+            Връзка с таблица <c>Car</c>.
+            </description>
+            </item>
+            </list>
+        </member>
+    </members>
+</doc>

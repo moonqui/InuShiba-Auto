@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Business</name>
+    </assembly>
+    <members>
+        <member name="T:Business.CarHouseBusiness">
+            <summary>
+            Създава се бизнес слой, който работи с БД.
+            </summary>
+            <remarks>
+            <c>CarHouseBusiness</c> дава възможност за добавяне, изтриване, актуализиране и извличане на информация, 
+            която се запазва в БД
+            </remarks>
+        </member>
+        <member name="F:Business.CarHouseBusiness.carhouseContext">
+            <value>
+            <c>carhouseContext</c> е нов обект за използване на връзката с БД от клас <c>CarHouseContext</c> 
+            </value>
+            <remarks>
+            В текущия клас вече може да се работи с данните от клас <c>CarHouseContext</c>.
+            </remarks>
+        </member>
+        <member name="M:Business.CarHouseBusiness.AddCar(Data.Model.Car)">
+             <summary>
+            Метод за добавяне на кола към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="car"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.AddBrand(Data.Model.Brand)">
+             <summary>
+            Метод за добавяне на марка към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="brand"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.AddModel(Data.Model.Modell)">
+             <summary>
+            Метод за добавяне на модел към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да се добавят нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="modell"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.AddClient(Data.Model.Client)">
+             <summary>
+            Метод за добавяне на клиент към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="client"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.AddOrder(Data.Model.Order)">
+             <summary>
+            Метод за добавяне на поръчка към базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да се добавият нови данни към нея.
+             Направените промени се запазват.
+             </remarks>
+             
+             <param name="order"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.UpdateCar(Data.Model.Car)">
+             <summary>
+            Метод за aктуализиранe на кола от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="car"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.UpdateBrand(Data.Model.Brand)">
+             <summary>
+            Метод за aктуализиранe на марка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="brand"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.UpdateModel(Data.Model.Modell)">
+             <summary>
+            Метод за aктуализиранe на модел от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="modell"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.UpdateClient(Data.Model.Client)">
+             <summary>
+            Метод за aктуализиранe на клиент от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="client"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.UpdateOrder(Data.Model.Order)">
+             <summary>
+            Метод за aктуализиранe на поръчка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да се актуализират данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="order"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.DeleteCar(System.Int32)">
+             <summary>
+            Метод за изтриване на кола от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="id"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.DeleteBrand(System.Int32)">
+             <summary>
+            Метод за изтриване на марка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="id"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.DeleteModel(System.Int32)">
+             <summary>
+            Метод за изтриване на модел от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="id"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.DeleteClient(System.Int32)">
+             <summary>
+            Метод за изтриване на клиент от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="id"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.DeleteOrder(System.Int32)">
+             <summary>
+            Метод за изтриване на поръчка от базата данни
+             </summary>
+             /// <remarks>
+             Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да се изтрият данните в нея.
+             Направените промени се запазват.
+             </remarks>
+             <param name="id"></param>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetCar(System.Int32)">
+            <summary>
+            Метод за откриване на кола от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Cars</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+            <param name="id"></param>
+            <returns>
+            Търсената кола по ID.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetBrand(System.Int32)">
+            <summary>
+            Метод за откриване на марка от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Brands</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+            <param name="id"></param>
+            <returns>
+            Търсената марка по ID.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetModel(System.Int32)">
+            <summary>
+            Метод за откриване на модел от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Modells</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+            <param name="id"></param>
+            <returns>
+            Търсения модел по ID.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetClient(System.Int32)">
+            <summary>
+            Метод за откриване на клиент от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Clients</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            </remarks>
+            <param name="id"></param>
+            <returns>
+            Търсения клиент по ID.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetOrder(System.Int32)">
+            <summary>
+            Метод за откриване на поръчка от базата данни по Id
+            </summary>
+            /// <remarks>
+            Използва се връзката с <c>Orders</c> от клас <c>CarHouseContext</c>, за да открие зададено Id.
+            Направените промени се запазват.
+            </remarks>
+            <param name="id"></param>
+            <returns>
+            Търсената поръчка по ID.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetAllCars">
+            <summary>
+            Списък за вземaне на всички клиенти от базата данни
+            </summary>
+            <returns>
+            Крайния списък с клиентите след направените промени.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetAllBrands">
+            <summary>
+            Списък за вземaне на всички марки от базата данни
+            </summary>
+            <returns>
+            Крайния списък с марките след направените промени.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetAllModels">
+            <summary>
+            Списък за вземaне на всички модели от базата данни
+            </summary>
+            <returns>
+            Крайния списък с моделите след направените промени.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetAllClients">
+            <summary>
+            Списък за вземaне на всички клиенти от базата данни
+            </summary>
+            <returns>
+            Крайния списък с клиентите след направените промени.
+            </returns>
+        </member>
+        <member name="M:Business.CarHouseBusiness.GetAllOrders">
+            <summary>
+            Списък за вземaне на всички поръчки от базата данни
+            </summary>
+            <returns>
+            Крайния списък с поръчките след направените промени.
+            </returns>
+        </member>
+    </members>
+</doc>

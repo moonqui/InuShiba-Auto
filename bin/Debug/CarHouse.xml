@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarHouse</name>
+    </assembly>
+    <members>
+        <member name="T:CarHouse.Form1">
+            <summary>
+            Описване на потребителския интерфейс.
+            </summary>
+            <remarks>
+            Представя се възможност за използване 
+            на различни методи за работа с база данни като 
+            добавяне, изтриване, актуализиране, извличане.
+            </remarks>
+        </member>
+        <member name="F:CarHouse.Form1.carhouseBusiness">
+            <value>
+            <c>carhouseBusiness</c> свързва <c>Form1</c> с <c>CarHouseBusiness</c>.
+            </value>
+            <remarks>
+            В текущия клас вече може да се работи с данните от клас <c>CarHouseBusiness</c>.
+            </remarks>
+        </member>
+        <member name="M:CarHouse.Form1.#ctor">
+            <summary>
+            Инициализация на графичния интерфейс.
+            </summary>
+        </member>
+        <member name="M:CarHouse.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Добавя нов запис за кола в базата данни.
+            </summary>
+            <remarks>Всички textBox полета без <c>textBox1</c> в tab Cars трябва да бъдат попълнени, за да се добави нов запис.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Актуализира се запис на кола в базата данни.
+            </summary>
+            <remarks>Трябва всички textBox полета в tab Cars да бъдат запълнени, включително и ID на колата, която искаме да актуализираме.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button3_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изтрива се запис на кола от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на колата(<c>CarId</c>), която желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извежда се запис на кола от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на колата (<c>CarId</c>), която желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button5_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извеждат се всички записи от таблица Car от базата данни.
+            </summary>
+            <remarks>Не е нужно да се попълва textBox поле, за да работи този метод.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button6_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изчистване на всички textBox и richTextBox полета в tab Cars.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button12_Click(System.Object,System.EventArgs)">
+            <summary>
+            Добавя нов запис за марка в базата данни.
+            </summary>
+            <remarks>Всички textBox полета без <c>textBox12</c> в tab Brands трябва да бъдат попълнени, за да се добави нов запис.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button11_Click(System.Object,System.EventArgs)">
+            <summary>
+            Актуализира се запис на марка в базата данни.
+            </summary>
+            <remarks>Трябва всички textBox полета в tab Brand да бъдат запълнени, включително и ID на марката, която искаме да актуализираме.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button10_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изтрива се запис на марка от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на марката(<c>BrandId</c>), която желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button9_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извежда се запис на марка от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на марката (<c>BrandId</c>), която желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button8_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извеждат се всички записи от таблица Brand от базата данни.
+            </summary>
+            <remarks>Не е нужно да се попълва textBox поле, за да работи този метод.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button7_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изчистване на всички textBox и richTextBox полета в tab Brands.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button18_Click(System.Object,System.EventArgs)">
+            <summary>
+            Добавя нов запис за модел в базата данни.
+            </summary>
+            <remarks>Всички textBox полета без <c>textBox8</c> в tab Models трябва да бъдат попълнени, за да се добави нов запис.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button17_Click(System.Object,System.EventArgs)">
+            <summary>
+            Актуализира се запис на модел в базата данни.
+            </summary>
+            <remarks>Трябва всички textBox полета в tab Models да бъдат запълнени, включително и ID на модела, който искаме да актуализираме.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button16_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изтрива се запис на модел от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на модела(<c>ModelId</c>), който желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button15_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извежда се запис на модел от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на модела (<c>ModelId</c>), който желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button14_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извеждат се всички записи от таблица Model от базата данни.
+            </summary>
+            <remarks>Не е нужно да се попълва textBox поле, за да работи този метод.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button13_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изчистване на всички textBox и richTextBox полета в tab Models.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>v
+        </member>
+        <member name="M:CarHouse.Form1.button24_Click(System.Object,System.EventArgs)">
+            <summary>
+            Добавя нов запис за клиент в базата данни.
+            </summary>
+            <remarks>Всички textBox полета без <c>textBox11</c> в tab Clients трябва да бъдат попълнени, за да се добави нов запис.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button23_Click(System.Object,System.EventArgs)">
+            <summary>
+            Актуализира се запис на клиент в базата данни.
+            </summary>
+            <remarks>Трябва всички textBox полета в tab Clients да бъдат запълнени, включително и ID на клиента, който искаме да актуализираме.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button22_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изтрива се запис на клиент от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на клиента(<c>ClientId</c>), който желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button21_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извежда се запис на клиент от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на клиента (<c>ClientId</c>), който желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button20_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извеждат се всички записи от таблица Client от базата данни.
+            </summary>
+            <remarks>Не е нужно да се попълва textBox поле, за да работи този метод.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button19_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изчистване на всички textBox и richTextBox полета в tab Clients.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button30_Click(System.Object,System.EventArgs)">
+            <summary>
+            Добавя нов запис за поръчки в базата данни.
+            </summary>
+            <remarks>Всички textBox полета без <c>textBox16</c> в tab Orders трябва да бъдат попълнени, за да се добави нов запис.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button29_Click(System.Object,System.EventArgs)">
+            <summary>
+            Актуализира се запис на поръчка в базата данни.
+            </summary>
+            <remarks>Трябва всички textBox полета в tab Orders да бъдат запълнени, включително и ID на поръчката, която искаме да актуализираме.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button28_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изтрива се запис на поръчка от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на поръчката(<c>OrderId</c>), която желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button27_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извежда се запис на поръчка от базата данни по ID.
+            </summary>
+            <remarks>За изпълнението на този метод е нужно само ID на поръчката (<c>OrderId</c>), която желаем да изтрием.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button26_Click(System.Object,System.EventArgs)">
+            <summary>
+            Извеждат се всички записи от таблица Order от базата данни.
+            </summary>
+            <remarks>Не е нужно да се попълва textBox поле, за да работи този метод.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.button25_Click(System.Object,System.EventArgs)">
+            <summary>
+            Изчистване на всички textBox и richTextBox полета в tab Orders.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:CarHouse.Form1.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Таймер, с който осъществяваме функцията на екрана при зареждане.
+            </summary>
+            <remarks>При всеки Tick, <c>progressBar1</c> се запълва, докато стигне 100. Когато го достигне - таймерът се спира, крият се <c>pictureBox1</c>, <c>pictureBox2</c>, <c>label32</c> и <c>progressBar1</c>.</remarks>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:CarHouse.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CarHouse.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CarHouse.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:CarHouse.Program.Main">
+            <summary>
+            Основната входна точка на приложението.
+            </summary>
+        </member>
+        <member name="T:CarHouse.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CarHouse.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CarHouse.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
